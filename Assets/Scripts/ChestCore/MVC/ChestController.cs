@@ -1,6 +1,6 @@
 using UnityEngine;
 //using Services;
-//using Chest.StateMachine;
+using ChestCore.StateMachine;
 
 namespace ChestCore.MVC
 {
@@ -13,7 +13,7 @@ namespace ChestCore.MVC
     {
         private ChestModel chestModel;
         private ChestView chestView;
-        //private ChestSM chestSM;
+        private ChestStateMachine chestSM;
 
         /*
             Constructor to set References to ChestModel & ChestView.
@@ -23,7 +23,7 @@ namespace ChestCore.MVC
         {
             chestModel = _chestModel;
             chestView = _chestView;
-            //chestSM = new ChestSM(this);
+            chestSM = new ChestStateMachine(this);
         }
 
         /*
@@ -45,10 +45,10 @@ namespace ChestCore.MVC
         /*
             Gets Reference to the State Machine attached with the Controller.
         */
-        /*public ChestSM GetChestSM()
+        public ChestStateMachine GetChestSM()
         {
             return chestSM;
-        }*/
+        }
 
         /*
             Method is executed whenever Chest is Clicked. Triggers the Popup.
@@ -105,10 +105,10 @@ namespace ChestCore.MVC
         /*
             
         */
-        /*public void DequeueChest()
+        public void DequeueChest()
         {
-            ChestService.Instance.DequeueChestFromWaitingQueue();
-        }*/
+            //ChestService.Instance.DequeueChestFromWaitingQueue();
+        }
 
     }
 
