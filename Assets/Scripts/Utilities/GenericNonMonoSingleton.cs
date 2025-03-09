@@ -16,7 +16,7 @@ namespace Utilities
             }
             else
             {
-                Debug.Log(instance + " is Tring to create another instance");
+                Debug.Log(instance + " is Trying to create another instance");
             }
         }
     }
