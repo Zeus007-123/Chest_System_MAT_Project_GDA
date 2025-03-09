@@ -1,5 +1,5 @@
 using UnityEngine;
-//using Services;
+using Services;
 using ChestCore.StateMachine;
 
 namespace ChestCore.MVC
@@ -54,10 +54,10 @@ namespace ChestCore.MVC
             Method is executed whenever Chest is Clicked. Triggers the Popup.
             Uses ChestService to contact PopupService. 
         */
-        /*public void OnChestButtonClicked()
+        public void OnChestButtonClicked()
         {
-            ChestService.Instance.TriggerPopUp(this);
-        }*/
+            ChestCoreService.Instance.TriggerPopUp(this);
+        }
 
         /*
             Gets called everytime new Chest is Found.
@@ -103,11 +103,12 @@ namespace ChestCore.MVC
         }
 
         /*
-            
+          Dequeues the first chest that was in the waiting queue and
+          starts the unlock timer.
         */
         public void DequeueChest()
         {
-            //ChestService.Instance.DequeueChestFromWaitingQueue();
+            ChestCoreService.Instance.DequeueChestFromWaitingQueue();
         }
 
     }
