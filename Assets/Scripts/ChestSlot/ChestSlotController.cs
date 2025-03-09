@@ -11,9 +11,10 @@ namespace ChestSlot
         OCCUPIED
     }
 
-    /*
-        ChestSlotController class. Attached with Gameobject to display ChestSlot State.
-    */
+    /// <summary>
+    /// ChestSlotController class. Attached with Gameobject to display ChestSlot State.
+    /// <summary>
+    
     public class ChestSlotController : MonoBehaviour
     {
         public ChestSlotType CHEST_SLOT_STATUS;

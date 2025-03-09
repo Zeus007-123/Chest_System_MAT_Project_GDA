@@ -2,10 +2,11 @@ using ChestCore.MVC;
 
 namespace ChestCore.StateMachine
 {
-    /*
-        ChestLockedState class. Handles Functionality of when Chest is in LOCKED state.
-        Is used when New Chest is Spawned.
-    */
+    /// <summary>
+    /// ChestLockedState class. Handles Functionality of when Chest is in LOCKED state.
+    /// Is used when New Chest is Spawned.
+    /// <summary>
+    
     public class ChestLockedState : ChestBaseState
     {
         public ChestLockedState(ChestStateMachine _chestSM) : base(_chestSM) { }

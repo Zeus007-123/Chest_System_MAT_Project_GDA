@@ -5,9 +5,10 @@ using ChestSlot;
 namespace Services
 {
 
-    /*
-        ChestSlotService MonoSingleton class. Handles Chest-Slots & Gets / Resets Chest Slot.
-    */
+    /// <summary>
+    /// ChestSlotService MonoSingleton class. Handles ChestSlots & Gets / Resets Chest Slot.
+    /// <summary>
+    
     public class ChestSlotService : GenericMonoSingleton<ChestSlotService>
     {
         [SerializeField] ChestSlotController[] chestSlots;

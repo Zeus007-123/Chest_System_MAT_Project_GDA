@@ -2,8 +2,10 @@ using UnityEngine;
 
 namespace Utilities
 {
-
-    // Generic Class for MonoBehaviour Singleton - Will be used by Services.
+    /// <summary>
+    /// Generic Class for MonoBehaviour Singleton - Will be used by Services.
+    /// <summary>
+    
     public class GenericMonoSingleton<T> : MonoBehaviour where T : GenericMonoSingleton<T>
     {
         protected static T instance;

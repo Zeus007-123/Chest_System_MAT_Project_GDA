@@ -5,10 +5,10 @@ using TMPro;
 namespace ChestCore.MVC
 {
 
-    /*
-        ChestView class. Inherits from Monobheviour. Handles the Visual aspect of the Gameobject.
-        Keeps reference to ChestController.
-    */
+    /// <summary>
+    /// ChestView class. Inherits from Monobheviour. Handles the Visual aspect of the Gameobject.
+    /// Keeps reference to ChestController.
+    ///
     public class ChestView : MonoBehaviour
     {
         private ChestController chestController;
@@ -35,10 +35,10 @@ namespace ChestCore.MVC
         /*
             Method is Executed when the Chest is Clicked.
         */
-        /*public void OnChestClicked()
+        public void OnChestClicked()
         {
-            chestController.OnChestButtonClicked();
-        }*/
+            chestController.OnChestButtonIsClicked();
+        }
 
     }
 

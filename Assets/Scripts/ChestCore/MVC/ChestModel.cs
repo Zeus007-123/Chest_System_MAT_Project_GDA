@@ -15,9 +15,9 @@ namespace ChestCore.MVC
         LEGENDARY
     }
 
-    /*
-        ChestModel class. Contains Data for a chest. Interacts with the ChestController.
-    */
+    /// <summary>
+    /// ChestModel class. Contains Data for a chest. Interacts with the ChestController.
+    /// <summary> 
     public class ChestModel
     {
         private ChestController chestController;

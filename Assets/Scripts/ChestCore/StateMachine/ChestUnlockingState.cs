@@ -5,10 +5,11 @@ using ChestCore.MVC;
 namespace ChestCore.StateMachine
 {
 
-    /*
-        ChestUnlockingState class. Handles Functionality of when Chest is in UNLOCKING state.
-        Chest switches to this state from QUEUED state, when the gameObject associated is DEQUEUED.
-    */
+    /// <summary>
+    /// ChestUnlockingState class. Handles Functionality of when Chest is in UNLOCKING state.
+    /// Chest switches to this state from QUEUED state, when the gameObject associated is DEQUEUED.
+    /// <summary>
+    
     public class ChestUnlockingState : ChestBaseState
     {
         public ChestUnlockingState(ChestStateMachine _chestSM) : base(_chestSM) { }

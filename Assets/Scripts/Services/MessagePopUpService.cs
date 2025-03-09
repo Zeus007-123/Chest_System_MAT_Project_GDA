@@ -8,9 +8,10 @@ using ChestCore.StateMachine;
 namespace Services
 {
 
-    /*
-        MessagePopUpService MonoSingleton Class. Handles All the logic & functionality of PopupUI.
-    */
+    /// <summary>
+    /// MessagePopUpService MonoSingleton Class. Handles All the logic & functionality of PopupUI.
+    /// <summary>
+    
     public class MessagePopUpService : GenericMonoSingleton<MessagePopUpService>
     {
         [SerializeField] GameObject PopUpUI;

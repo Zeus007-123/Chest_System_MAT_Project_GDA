@@ -12,9 +12,11 @@ namespace ChestCore.StateMachine
         UNLOCKING,
         UNLOCKED
     }
-    /*
-        ChestStateMachine class. Acts as a State Machine for Chest. Contains Reference to all different States & ChestController.
-    */
+
+    /// <summary>
+    /// ChestStateMachine class. Acts as a State Machine for Chest. Contains Reference to all different States & ChestController.
+    /// <summary>
+    
     public class ChestStateMachine
     {
         public ChestBaseState currentChestState = null;

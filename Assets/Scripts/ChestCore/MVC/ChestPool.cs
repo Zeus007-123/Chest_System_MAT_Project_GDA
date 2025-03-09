@@ -3,9 +3,9 @@ using UnityEngine;
 namespace ChestCore.MVC
 {
 
-    /*
-        ObjectPool Class for Chest. Handles Pool Generation, Get and Return Item Functionality. 
-    */
+    /// <summary>
+    /// ObjectPool Class for Chest. Handles Pool Generation, Get and Return Item Functionality. 
+    /// <summary>
     public class ChestPool
     {
         private ChestView[] chestPool;

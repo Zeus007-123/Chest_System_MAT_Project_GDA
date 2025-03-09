@@ -3,10 +3,11 @@ using ChestCore.MVC;
 namespace ChestCore.StateMachine
 {
 
-    /*
-        ChestOpenState class. Handles Functionality of when Chest is in OPEN state.
-        Chest switches to this state after UNLOCKING state.
-    */
+    /// <summary>
+    /// ChestUnlockedState class. Handles Functionality of when Chest is in Unlocked state.
+    /// Chest switches to this state after UNLOCKING state.
+    /// <summary>
+    
     public class ChestUnlockedState : ChestBaseState
     {
         public ChestUnlockedState(ChestStateMachine _chestSM) : base(_chestSM) { }
@@ -21,7 +22,7 @@ namespace ChestCore.StateMachine
         }
 
         /*
-            Sets the Timer Text to OPEN.
+            Sets the Timer Text to UNLOCKED.
         */
 
         private void SetTimerText()

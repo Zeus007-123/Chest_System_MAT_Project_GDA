@@ -5,10 +5,10 @@ using ChestCore.StateMachine;
 namespace ChestCore.MVC
 {
 
-    /*
-        ChestController class. Processes data from ChestModel & sends it to ChestView. 
-        Handles Logic for Setting Attributes. Contains reference to ChestModel, ChestView & ChestSM.
-    */
+    /// <summary>
+    /// ChestController class. Processes data from ChestModel & sends it to ChestView. 
+    /// Handles Logic for Setting Attributes. Contains reference to ChestModel, ChestView & ChestSM.
+    /// <summary>
     public class ChestController
     {
         private ChestModel chestModel;
@@ -54,7 +54,7 @@ namespace ChestCore.MVC
             Method is executed whenever Chest is Clicked. Triggers the Popup.
             Uses ChestService to contact PopupService. 
         */
-        public void OnChestButtonClicked()
+        public void OnChestButtonIsClicked()
         {
             ChestCoreService.Instance.TriggerPopUp(this);
         }

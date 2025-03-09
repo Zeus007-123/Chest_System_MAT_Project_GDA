@@ -7,9 +7,10 @@ using ChestCore.StateMachine;
 namespace Services
 {
 
-    /*
-        EventService MonoSingleton Class. Used to Handle All Events which happen in Game.
-    */
+    /// <summary>
+    /// EventService MonoSingleton Class. Used to Handle All Events which happen in Game.
+    /// <summary>
+    
     public class EventService : GenericMonoSingleton<EventService>
     {
         public event Action onSlotsFull;

@@ -6,10 +6,11 @@ using ChestCore.StateMachine;
 namespace Services
 {
 
-    /*
-        ChestQueueingService Class. Handles All the Queue Operations.
-        Enqueues & Dequeues Chest to switch to UNLOCKING State.
-    */
+    /// <summary>
+    /// ChestQueueingService Class. Handles All the Queue Operations.
+    /// Enqueues & Dequeues Chest to switch to UNLOCKING State.
+    /// <summary>
+    
     public class ChestQueueingService
     {
         private int MAX_QUEUE_COUNT;

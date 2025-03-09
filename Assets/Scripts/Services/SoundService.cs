@@ -16,9 +16,10 @@ namespace Services
         CHEST_UNLOCKED
     }
 
-    /*
-        Serializable Class SoundInfo to maintain different properties.
-    */
+    /// <summary>
+    /// Serializable Class SoundInfo to maintain different properties.
+    /// <summary>
+    
     [System.Serializable]
     public class SoundInfo
     {
@@ -35,9 +36,10 @@ namespace Services
 
     }
 
-    /*
-        SoundService MonoSingleton class. Handles all the Sounds in the Project.
-    */
+    /// <summary>
+    /// SoundService MonoSingleton class. Handles all the Sounds in the Project.
+    /// <summary>
+    
     public class SoundService : GenericMonoSingleton<SoundService>
     {
         public SoundInfo[] Sounds;

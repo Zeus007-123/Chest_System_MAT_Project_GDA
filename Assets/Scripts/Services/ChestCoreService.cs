@@ -7,10 +7,11 @@ using ChestCore.StateMachine;
 namespace Services
 {
 
-    /*
-        ChestCoreService MonoSingleton Class. Handles Creation of Chest GameObjects.
-        Communicates with Other Services.
-    */
+    /// <summary>
+    /// ChestCoreService MonoSingleton Class. Handles Creation of Chest GameObjects.
+    /// Communicates with Other Services.
+    /// <summary>
+    
     public class ChestCoreService : GenericMonoSingleton<ChestCoreService>
     {
         [SerializeField] ChestSOList chestConfigs;

@@ -2,7 +2,10 @@ using UnityEngine;
 
 namespace Utilities
 {
-    // Generic Class for Non MonoBehaviour Singleton class. 
+    /// <summary>
+    /// Generic Class for Non MonoBehaviour Singleton class. 
+    /// <summary>
+
     public class GenericNonMonoSingleton<T> where T : GenericNonMonoSingleton<T>
     {
         private static T instance;

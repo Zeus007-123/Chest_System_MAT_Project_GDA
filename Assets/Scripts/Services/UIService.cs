@@ -6,9 +6,10 @@ using TMPro;
 namespace Services
 {
 
-    /*
-        UIService MonoSingleton class. Handles Menu UI (Coin Count, Gem Coint, Spawn Button)
-    */
+    /// <summary>
+    /// UIService MonoSingleton class. Handles Menu UI (Coin Count, Gem Coint, Spawn Button)
+    /// <summary>
+    
     public class UIService : GenericMonoSingleton<UIService>
     {
         public int COIN_COUNT { get; private set; }

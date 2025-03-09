@@ -2,10 +2,11 @@ using ChestCore.MVC;
 
 namespace ChestCore.StateMachine
 {
-    /*
-        ChestQueuedState class. Handles Functionality of when Chest is in QUEUED state.
-        Chest switches to this state after LOCKED state, when there is space in Waiting Queue.
-    */
+    /// <summary>
+    /// ChestQueuedState class. Handles Functionality of when Chest is in QUEUED state.
+    /// Chest switches to this state after LOCKED state, when there is space in Waiting Queue.
+    /// <summary>
+    
     public class ChestQueuedState : ChestBaseState
     {
         public ChestQueuedState(ChestStateMachine _chestSM) : base(_chestSM) { }

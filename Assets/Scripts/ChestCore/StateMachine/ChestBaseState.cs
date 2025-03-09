@@ -2,10 +2,11 @@ using System;
 
 namespace ChestCore.StateMachine
 {
-    /*
-        ChestBaseState class. All Chest State classes inherit this class.
-        Contains reference to the State Machine.
-    */
+    /// <summary>
+    /// ChestBaseState class. All Chest State classes inherit this class.
+    /// Contains reference to the State Machine.
+    /// <summary>
+    
     public class ChestBaseState
     {
         protected ChestStateMachine chestSM;
