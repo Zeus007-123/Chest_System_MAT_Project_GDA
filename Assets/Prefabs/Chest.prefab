@@ -9,6 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8727226328902798709}
+  - component: {fileID: -1850495303727589478}
   m_Layer: 5
   m_Name: Chest
   m_TagString: Untagged
@@ -36,6 +37,21 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &-1850495303727589478
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3468381990582074429}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56d9819f7cd6a11469af06cd5e3eb2db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ChestSprite: {fileID: 1314319872144800076}
+  Chest_Type: {fileID: 5423184527765216205}
+  Timer_Text: {fileID: 4752087461564469196}
 --- !u!1 &5159320762189422659
 GameObject:
   m_ObjectHideFlags: 0
@@ -291,7 +307,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1314319872144800076}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: -1850495303727589478}
+        m_TargetAssemblyTypeName: ChestCore.MVC.ChestView, Assembly-CSharp
+        m_MethodName: OnChestClicked
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &7834458219756067649
 GameObject:
   m_ObjectHideFlags: 0
@@ -324,10 +352,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 681895754575772525}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 1}
-  m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 21, y: 175}
-  m_SizeDelta: {x: 200, y: 50}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 175}
+  m_SizeDelta: {x: 0, y: 50}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!222 &8635297663242947025
 CanvasRenderer:
@@ -366,8 +394,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4278190335
-  m_fontColor: {r: 1, g: 0, b: 0, a: 1}
+    rgba: 4278451968
+  m_fontColor: {r: 0, g: 1, b: 0.012996674, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:

@@ -89,6 +89,8 @@ namespace Services
             CancelButton.gameObject.SetActive(false);
             OkButton.gameObject.SetActive(false);
             alertText.gameObject.SetActive(false);
+            queueFullText.gameObject.SetActive(false);
+            unlockText.gameObject.SetActive(false);
             chestContentText.gameObject.SetActive(false);
         }
 
